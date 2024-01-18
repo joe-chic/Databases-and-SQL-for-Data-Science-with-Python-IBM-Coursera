@@ -39,6 +39,7 @@ FROM chicago_public_schools;
 --@block
 -- SHOW VIEW SAFE_INFO
 SELECT * FROM SAFE_INFO LIMIT 5;
+SELECT `School_Name`,`Leaders_Rating` FROM SAFE_INFO LIMIT 5;
 
 --@block
 -- UPDATE_LEADER_SCORES() PROCEDURE:
@@ -122,3 +123,4 @@ WHERE `School_ID` = 610038;
 --@block
 SELECT `School_ID`, `Leaders_Score`,`Leaders_Icon` FROM chicago_public_schools
 WHERE `School_ID` = 610038;
+
